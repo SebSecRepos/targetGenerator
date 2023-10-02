@@ -1,5 +1,5 @@
 # targetGenerator
-> Utilidad para la kitty, sirve para generar automáticamente "tabs" con sus nombres y directorios de cara a realizar una máquina o auditoría
+> Utilidad para la kitty, sirve para generar automáticamente "tabs" con sus nombres y directorios para organizar un espacio de trabajo de cara a realizar una máquina o auditoría.
 ----
 
 ### Requerimientos
