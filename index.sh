@@ -69,19 +69,33 @@ function execute(){
 
 }
 
+function execute2(){
+
+    for folder in $tabs; do
+        tabId="$(kitty @ launch --type=tab --tab-title "$folder" "$1/Targets/$folder" --keep-focus zsh)"
+    done
+
+}
+
 
 # Main
 if [[ -e "$1/Targets" ]]; then
-    echo -e "\n ${redColour}[!]${yellowColour}La carpeta ya existe allí ¿Desea eliminarla y continuar? ${greenColour}<y> ${redColour}<n>${endColour}"
+    echo -e "\n ${redColour}[!]${endColour} La carpeta ya existe allí \n\n\t ${greenColour} <y>${yellowColour} ¿Desea eliminarla y continuar? \n\t  ${redColour}<n>${yellowColour} Salir \n\t ${blueColour} <a> ${yellowColour}Crear ventanas en la misma carpeta"
 
-    while [[ "$opt1" != "y" ]] && [[ "$opt1" != "n" ]]; do 
+    while [[ "$opt1" != "y" ]] && [[ "$opt1" != "n" ]] && [[ "$opt1" != "a" ]]; do 
             read opt1
+
             if [[ "$opt1" == "n" ]]; then
                 ctrl_c
+
             elif [[ "$opt1" == "y" ]]; then
                 remove_tabs 
                 rm -rf "$1/Targets"
                 execute $1
+
+	    elif [[ "$opt1" == "a" ]]; then
+                remove_tabs 
+                execute2 $1
             else
                 echo -e "Opción inválida"
                 read opt1  #Leer hasta que sea correcta
