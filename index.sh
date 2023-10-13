@@ -10,7 +10,7 @@ purpleColour="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
-tabs=('Nmap' 'Content' 'Exploits' 'Routes' 'ReverseTCP')
+tabs=('Nmap👁️‍🗨️' 'Content🗒️' 'Exploits☠️' 'Routes🗺️' 'ReverseTCP🔓')
 
 # Helpanel
 if [[ ! $1 ]] || [[ "$1" == "-h" ]] ; then
