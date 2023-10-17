@@ -8,9 +8,10 @@
 - sxhkd
 
 ### Instalación
-> Debe primero activarse el control remoto de la kitty, en cada kitty debe iniciarse con esta configuración, para ello modificar `/home/<usuario>/.config/sxhkd/sxhkdrc`
+> Debe primero activarse el control remoto de la kitty, en cada kitty debe iniciarse con esta configuración, para ello modificar `/home/<usuario>/.config/sxhkd/sxhkdrc` en la combinación para ejectar la kitty `super + return`
 
-![Captura de pantalla de 2023-10-01 15-01-19](https://github.com/SebSecRepos/targetGenerator/assets/130188315/68cdf994-b425-47c3-a38e-88fd6ca23a28)
+![image](https://github.com/SebSecRepos/targetGenerator/assets/130188315/8a8c33a7-54f8-40de-aebd-f3f421fdaf14)
+
 
 > Una vez modificado el archivo `sxhkdrc` solo debemos ejecutar el `installer.sh` como root, esto genera el directorio en /opt/ y crea el enlace simbólico para ejecutar el script
 
@@ -22,7 +23,7 @@
 
 Crear la nueva ventana 
 ```bash
-  /usr/bin/kitty -o allow_remote_control=yes -o enabled_layouts=tall & disown
+  /usr/bin/kitty -o allow_remote_control=yes & disown 
 ```
 
 ---
