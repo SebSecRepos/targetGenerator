@@ -1,11 +1,12 @@
 # targetGenerator
-> Utilidad para la kitty, sirve para generar automáticamente "tabs" con sus nombres y directorios para organizar un espacio de trabajo de cara a realizar una máquina o auditoría.
+> Utilidad para la kitty y la zsh, sirve para generar automáticamente "tabs" con sus nombres y directorios para organizar un espacio de trabajo de cara a realizar una máquina o auditoría.
 ----
 
 ### Requerimientos
 - Kitty
 - bspwn
 - sxhkd
+- zsh
 
 ### Instalación
 > Debe primero activarse el control remoto de la kitty, en cada kitty debe iniciarse con esta configuración, para ello modificar `/home/<usuario>/.config/sxhkd/sxhkdrc` en la combinación para ejectar la kitty `super + return`
@@ -33,11 +34,11 @@ Crear la nueva ventana
 ```bash
   tarGen <ruta absoluta>
 ```
-![image](https://github.com/SebSecRepos/targetGenerator/assets/130188315/50e1aa75-bd02-4c61-858b-0d97551cabe6)
+> Como vemos nos pide las direcciones ip sparadas por espacio de los equipos a auditar en la red, por cada una de las carpetas prinicipales, creará una con la ip de cada máquina.
 
-> Como vemos nos crea los directorios y las tabs de la kitty para cada directorio, cada tab ya esta establecida en su espacio de trabajo correspondiente
+![imagen](https://github.com/SebSecRepos/targetGenerator/assets/130188315/d92febae-16dd-4ac4-a88e-4e0dddeafc14)
 
-![image](https://github.com/SebSecRepos/targetGenerator/assets/130188315/05c3520d-c581-4348-9c8b-6d046d1aed94)
+
 
 
 
